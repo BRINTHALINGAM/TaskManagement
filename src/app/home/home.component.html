@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">Task Management</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+              <li class="nav-item users-btn">
+                  <button type="button" class="btn btn-outline-primary">Users</button>
+              </li>
+              <li class="nav-item dropdown">
+                  <div ngbDropdown class="d-inline-block">
+                      <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                          Projects
+                      </button>
+                      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                          <button ngbDropdownItem></button>
+                          <button ngbDropdownItem>Project 1</button>
+                          <button ngbDropdownItem>Project 2</button>
+                          <div class="dropdown-divider"></div>
+                          <button ngbDropdownItem>Create Project</button>
+                          <button ngbDropdownItem>View all Project</button>
+                          <div class="dropdown-divider"></div>
+                          <button ngbDropdownItem>Report</button>
+                          <button ngbDropdownItem>Charts</button>
+                      </div>
+                  </div>
+              </li>
+              <li class="nav-item users-btn">
+                  <button type="button" class="btn btn-outline-primary">Teams</button>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+<div>
+    
+</div>
