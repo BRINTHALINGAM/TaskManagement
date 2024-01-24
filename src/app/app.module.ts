@@ -24,6 +24,11 @@ import { UserAddEditComponent } from './user-add-edit/user-add-edit.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CreateComponent } from './create/create.component';
 import { CommentComponent } from './comment/comment.component';
+import {Chart} from 'chart.js';
+import {registerables} from 'chart.js';
+Chart.register(...registerables);
+
+
 
 
 
