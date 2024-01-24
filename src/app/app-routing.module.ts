@@ -10,13 +10,13 @@ import { LoginpageComponent } from './loginpage/loginpage.component';
 
 
 const routes: Routes = [
-  {path:'',component:HomeComponent},
+  { path : '', component : LoginpageComponent},
+  {path:'home',component:HomeComponent},
   { path:'loginactivity',component:LoginactivityComponent },
   {path: 'manageaccount', component:ManageaccountComponent},
   {path:'acl',component:AclSettingsComponent},
   {path:'chart',component:ChartComponent},
   { path: 'task', component: TaskComponent },
-  { path : 'login', component : LoginpageComponent}
 ];
 
 @NgModule({

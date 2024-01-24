@@ -21,6 +21,7 @@ import { DocumentsComponent } from './Team_C/documents/documents.component';
 import { ImageuploaderComponent } from './Team_C/imageuploader/imageuploader.component';
 import { UsersComponent } from './users/users.component';
 import { UserAddEditComponent } from './user-add-edit/user-add-edit.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -53,7 +54,8 @@ import { UserAddEditComponent } from './user-add-edit/user-add-edit.component';
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent }, 
     
-    ])
+    ]),
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()
