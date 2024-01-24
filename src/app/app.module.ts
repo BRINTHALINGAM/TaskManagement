@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NgbDropdown, NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TaskComponent } from './task/task.component';
 import { AclSettingsComponent } from './acl-settings/acl-settings.component';
 import { LoginactivityComponent } from './loginactivity/loginactivity.component';
 import { ManageaccountComponent } from './manageaccount/manageaccount.component';
@@ -19,10 +20,12 @@ import { TimetrackerComponent } from './Team_C/timetracker/timetracker.component
 import { DocumentsComponent } from './Team_C/documents/documents.component';
 import { ImageuploaderComponent } from './Team_C/imageuploader/imageuploader.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    TaskComponent,
     AclSettingsComponent,
     LoginactivityComponent,
     ManageaccountComponent,     
@@ -35,6 +38,7 @@ import { ImageuploaderComponent } from './Team_C/imageuploader/imageuploader.com
      TimetrackerComponent, 
      DocumentsComponent, 
      ImageuploaderComponent
+
   ],
   imports: [
     BrowserModule,
