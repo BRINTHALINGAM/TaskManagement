@@ -36,20 +36,25 @@
             <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
               <button ngbDropdownItem></button>
               <button ngbDropdownItem routerLink="/task">Project 1</button>
-              <!-- <a routerLink="/task"><button>Project 1</button></a> -->
-              <button ngbDropdownItem routerLink="/task">Project 2</button>
-
+              <button ngbDropdownItem>Project 2</button>
               <div class="dropdown-divider"></div>
               <button ngbDropdownItem>Create Project</button>
               <button ngbDropdownItem>View all Project</button>
+              <button ngbDropdownItem>View all Tasks</button>
               <div class="dropdown-divider"></div>
               <button ngbDropdownItem>Report</button>
-              <button ngbDropdownItem>Charts</button>
+              <button
+                ngbDropdownItem
+                [routerLink]="['/chart']"
+                routerLinkActive="router-link-active"
+              >
+                Charts
+              </button>
             </div>
           </div>
         </li>
 
-        
+        <!-- Teams button -->
 
         <li class="nav-item users-btn">
           <button type="button" class="btn btn-outline-primary">Teams</button>
@@ -76,16 +81,28 @@
 
       <!-- Profile Dropdown items and its icon -->
 
-      <button ngbDropdownItem>
+      <button
+        ngbDropdownItem
+        [routerLink]="['/manageaccount']"
+        routerLinkActive="router-link-active"
+      >
         <fa-icon [icon]="faKey" class="mr-2"></fa-icon> Manage Account
       </button>
       <button ngbDropdownItem>
         <fa-icon [icon]="faUser" class="mr-2"></fa-icon> Profile
       </button>
-      <button ngbDropdownItem>
+      <button
+        ngbDropdownItem
+        [routerLink]="['/loginactivity']"
+        routerLinkActive="router-link-active"
+      >
         <fa-icon [icon]="faClock" class="mr-2"></fa-icon> Login Activity
       </button>
-      <button ngbDropdownItem>
+      <button
+        ngbDropdownItem
+        [routerLink]="['/acl']"
+        routerLinkActive="router-link-active"
+      >
         <fa-icon [icon]="faShield" class="mr-2"></fa-icon> ACL
       </button>
       <div class="dropdown-divider"></div>
