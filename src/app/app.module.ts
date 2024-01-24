@@ -4,21 +4,23 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbDropdown, NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HomeComponent } from './home/home.component'; 
+import { HomeComponent } from './home/home.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AclSettingsComponent } from './acl-settings/acl-settings.component';
 import { LoginactivityComponent } from './loginactivity/loginactivity.component';
 import { ManageaccountComponent } from './manageaccount/manageaccount.component';
-
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    AclSettingsComponent,
     LoginactivityComponent,
-    ManageaccountComponent
-  ],
+    ManageaccountComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    FontAwesomeModule,
   ],
   providers: [
     provideClientHydration()
