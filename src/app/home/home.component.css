@@ -2,3 +2,30 @@
     margin-right: 10px; /* Adjust the margin value as needed */
     margin-left:10px;
 }
+
+/* Custom styling for the dropdown menu */
+.dropdown-menu-custom {
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 100%;
+    transform: translateX(-10%);
+  }
+
+  .fa-icon-bell {
+    margin-right: 50px; /* Adjust the value according to your desired spacing */
+  }
+  
+  /* Custom styling for the user dropdown button */
+  #profileDropdown {
+    margin-right: 50px; /* Adjust the value according to your desired spacing */
+  }
+  
+ 
+  
+  
+
+  
+  
+  
+  
