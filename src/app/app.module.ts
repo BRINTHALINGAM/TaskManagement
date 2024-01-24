@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbDropdown, NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -19,6 +19,18 @@ import { BoardsComponent } from './Team_C/boards/boards.component';
 import { TimetrackerComponent } from './Team_C/timetracker/timetracker.component';
 import { DocumentsComponent } from './Team_C/documents/documents.component';
 import { ImageuploaderComponent } from './Team_C/imageuploader/imageuploader.component';
+import { UsersComponent } from './users/users.component';
+import { UserAddEditComponent } from './user-add-edit/user-add-edit.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CreateComponent } from './create/create.component';
+import { CommentComponent } from './comment/comment.component';
+import {Chart} from 'chart.js';
+import {registerables} from 'chart.js';
+import { ProfileComponent } from './profile/profile.component';
+Chart.register(...registerables);
+
+
+
 
 
 @NgModule({
@@ -37,7 +49,9 @@ import { ImageuploaderComponent } from './Team_C/imageuploader/imageuploader.com
      BoardsComponent, 
      TimetrackerComponent, 
      DocumentsComponent, 
-     ImageuploaderComponent
+     ImageuploaderComponent, 
+     UsersComponent, 
+     UserAddEditComponent, CreateComponent, CommentComponent, ProfileComponent
 
   ],
   imports: [
@@ -45,6 +59,11 @@ import { ImageuploaderComponent } from './Team_C/imageuploader/imageuploader.com
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
+    RouterModule.forRoot([
+      { path: 'home', component: HomeComponent }, 
+    
+    ]),
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()
