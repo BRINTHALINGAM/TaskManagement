@@ -6,6 +6,7 @@ import { ManageaccountComponent } from './manageaccount/manageaccount.component'
 import { HomeComponent } from './home/home.component';
 import { AclSettingsComponent } from './acl-settings/acl-settings.component';
 import { ChartComponent } from './chart/chart.component';
+import { LoginpageComponent } from './loginpage/loginpage.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,7 @@ const routes: Routes = [
   {path:'acl',component:AclSettingsComponent},
   {path:'chart',component:ChartComponent},
   { path: 'task', component: TaskComponent },
-  { path : 'login', component : LoginactivityComponent}
+  { path : 'login', component : LoginpageComponent}
 ];
 
 @NgModule({
