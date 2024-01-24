@@ -19,7 +19,7 @@ import { BoardsComponent } from './Team_C/boards/boards.component';
 import { TimetrackerComponent } from './Team_C/timetracker/timetracker.component';
 import { DocumentsComponent } from './Team_C/documents/documents.component';
 import { ImageuploaderComponent } from './Team_C/imageuploader/imageuploader.component';
-import { RoleComponent } from './role/role.component';
+
 
 
 @NgModule({
@@ -38,7 +38,7 @@ import { RoleComponent } from './role/role.component';
      BoardsComponent, 
      TimetrackerComponent, 
      DocumentsComponent, 
-     ImageuploaderComponent, RoleComponent
+     ImageuploaderComponent, 
 
   ],
   imports: [
