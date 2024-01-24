@@ -8,6 +8,7 @@ import { AclSettingsComponent } from './acl-settings/acl-settings.component';
 import { ChartComponent } from './chart/chart.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { NotificationComponent } from './Team_C/notification/notification.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path:'acl',component:AclSettingsComponent},
   {path:'chart',component:ChartComponent},
   { path: 'task', component: TaskComponent },
-  { path: 'notification', component:NotificationComponent}
+  { path: 'notification', component:NotificationComponent},
+  {path: 'profile', component: ProfileComponent}
 ];
 
 @NgModule({

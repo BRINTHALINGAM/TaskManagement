@@ -26,6 +26,7 @@ import { CreateComponent } from './create/create.component';
 import { CommentComponent } from './comment/comment.component';
 import {Chart} from 'chart.js';
 import {registerables} from 'chart.js';
+import { ProfileComponent } from './profile/profile.component';
 Chart.register(...registerables);
 
 
@@ -50,7 +51,7 @@ Chart.register(...registerables);
      DocumentsComponent, 
      ImageuploaderComponent, 
      UsersComponent, 
-     UserAddEditComponent, CreateComponent, CommentComponent
+     UserAddEditComponent, CreateComponent, CommentComponent, ProfileComponent
 
   ],
   imports: [
