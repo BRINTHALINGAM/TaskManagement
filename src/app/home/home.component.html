@@ -1,38 +1,26 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Task Management</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Task Management</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <!-- Users button -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
 
-        <li class="nav-item users-btn">
-          <button type="button" class="btn btn-outline-primary">Users</button>
-        </li>
+            <!-- Users button -->
 
-        <!-- Project button and its dropdown items -->
+          <li class="nav-item users-btn">
+            <button type="button" class="btn btn-outline-primary">Users</button>
+          </li>
 
-        <li class="nav-item dropdown">
-          <div ngbDropdown class="d-inline-block">
-            <button
-              type="button"
-              class="btn btn-outline-primary"
-              id="dropdownBasic1"
-              ngbDropdownToggle
-            >
-              Projects
-            </button>
+            <!-- Project button and its dropdown items -->
+
+          <li class="nav-item dropdown">
+            <div ngbDropdown class="d-inline-block">
+              <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                Projects
+              </button>
               <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                 <button ngbDropdownItem></button>
                 <button ngbDropdownItem>Project 1</button>
@@ -40,78 +28,55 @@
                 <div class="dropdown-divider"></div>
                 <button ngbDropdownItem>Create Project</button>
                 <button ngbDropdownItem>View all Project</button>
-                <button ngbDropdownItem>View all Tasks</button>
+                <button ngbDropdownItem>View all </button>
                 <div class="dropdown-divider"></div>
                 <button ngbDropdownItem>Report</button>
                 <button ngbDropdownItem [routerLink]="['/chart']" routerLinkActive="router-link-active" >Charts</button>
               </div>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <!-- Teams button -->
+          <!-- Teams button -->
 
-        <li class="nav-item users-btn">
-          <button type="button" class="btn btn-outline-primary">Teams</button>
-        </li>
-      </ul>
+          <li class="nav-item users-btn">
+            <button type="button" class="btn btn-outline-primary">Teams</button>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <!-- Notification icon -->
+    <!-- Notification icon -->
 
-  <fa-icon [icon]="faBell" class="fa-2x mr-4 fa-icon-bell"></fa-icon>
+    <fa-icon [icon]="faBell" class="fa-2x mr-4 fa-icon-bell"></fa-icon>
 
-  <!-- Profile dropdown -->
+    <!-- Profile dropdown -->
 
-  <div ngbDropdown class="d-inline-block position-relative">
-    <div
-      ngbDropdownMenu
-      aria-labelledby="dropdownBasic1"
-      class="dropdown-menu-custom ml-2"
-    >
+    <div ngbDropdown class="d-inline-block position-relative">
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-menu-custom ml-2">
       <p ngbDropdownItem>Arunagiri</p>
       <p ngbDropdownItem>arunagiri1706&#64;gmail.com</p>
       <div class="dropdown-divider"></div>
 
-      <!-- Profile Dropdown items and its icon -->
+    <!-- Profile Dropdown items and its icon -->
 
-      <button
-        ngbDropdownItem
-        [routerLink]="['/manageaccount']"
-        routerLinkActive="router-link-active"
-      >
+      <button ngbDropdownItem [routerLink]="['/manageaccount']" routerLinkActive="router-link-active" >
         <fa-icon [icon]="faKey" class="mr-2"></fa-icon> Manage Account
-      </button>
-      <button ngbDropdownItem>
+      </button>      <button ngbDropdownItem>
         <fa-icon [icon]="faUser" class="mr-2"></fa-icon> Profile
       </button>
-      <button
-        ngbDropdownItem
-        [routerLink]="['/loginactivity']"
-        routerLinkActive="router-link-active"
-      >
+      <button ngbDropdownItem [routerLink]="['/loginactivity']" routerLinkActive="router-link-active" >
         <fa-icon [icon]="faClock" class="mr-2"></fa-icon> Login Activity
       </button>
-      <button
-        ngbDropdownItem
-        [routerLink]="['/acl']"
-        routerLinkActive="router-link-active"
-      >
+      <button ngbDropdownItem [routerLink]="['/acl']" routerLinkActive="router-link-active" >
         <fa-icon [icon]="faShield" class="mr-2"></fa-icon> ACL
       </button>
-      <div class="dropdown-divider"></div>
+            <div class="dropdown-divider"></div>
       <button ngbDropdownItem>
         <fa-icon [icon]="faPower" class="mr-2"></fa-icon> Log Out
       </button>
-    </div>
-    <button
-      class="dropdown-item"
-      id="profileDropdown"
-      style="margin-right: 50px"
-      ngbDropdownToggle
-    >
+          </div>
+    <button class="dropdown-item" id="profileDropdown" style="margin-right: 50px;" ngbDropdownToggle>
       <fa-icon [icon]="faUser" class="fa-2x"></fa-icon>
     </button>
-  </div>
-</nav>
+  </div>  
+  </nav>
