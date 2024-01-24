@@ -10,9 +10,25 @@
 
             <!-- Users button -->
 
-          <li class="nav-item users-btn">
-            <button type="button" class="btn btn-outline-primary">Users</button>
-          </li>
+            <li class="nav-item dropdown users-btn">
+              <div ngbDropdown class="d-inline-block">
+                <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                  Admin
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button ngbDropdownItem></button>
+                  <button ngbDropdownItem>
+                    <fa-icon [icon]="faUser" class="mr-2"></fa-icon> Create User
+                  </button>                  
+                  <button ngbDropdownItem [routerLink]="['/loginactivity']" routerLinkActive="router-link-active" >
+                    <fa-icon [icon]="faClock" class="mr-2"></fa-icon> Login Activity
+                  </button>
+                  <button ngbDropdownItem [routerLink]="['/acl']" routerLinkActive="router-link-active" >
+                    <fa-icon [icon]="faShield" class="mr-2"></fa-icon> ACL
+                  </button>
+                </div>
+              </div>
+            </li>
 
             <!-- Project button and its dropdown items -->
 
@@ -61,14 +77,9 @@
 
       <button ngbDropdownItem [routerLink]="['/manageaccount']" routerLinkActive="router-link-active" >
         <fa-icon [icon]="faKey" class="mr-2"></fa-icon> Manage Account
-      </button>      <button ngbDropdownItem>
+      </button>      
+      <button ngbDropdownItem>
         <fa-icon [icon]="faUser" class="mr-2"></fa-icon> Profile
-      </button>
-      <button ngbDropdownItem [routerLink]="['/loginactivity']" routerLinkActive="router-link-active" >
-        <fa-icon [icon]="faClock" class="mr-2"></fa-icon> Login Activity
-      </button>
-      <button ngbDropdownItem [routerLink]="['/acl']" routerLinkActive="router-link-active" >
-        <fa-icon [icon]="faShield" class="mr-2"></fa-icon> ACL
       </button>
             <div class="dropdown-divider"></div>
       <button ngbDropdownItem>
