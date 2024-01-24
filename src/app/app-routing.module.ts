@@ -14,7 +14,8 @@ const routes: Routes = [
   {path: 'manageaccount', component:ManageaccountComponent},
   {path:'acl',component:AclSettingsComponent},
   {path:'chart',component:ChartComponent},
-  { path: 'task', component: TaskComponent }
+  { path: 'task', component: TaskComponent },
+  { path : 'login', component : LoginactivityComponent}
 ];
 
 @NgModule({
