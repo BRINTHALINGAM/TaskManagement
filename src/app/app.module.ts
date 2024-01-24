@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbDropdown, NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -26,6 +26,10 @@ import { ChartComponent } from './chart/chart.component';
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
+    RouterModule.forRoot([
+      { path: 'home', component: HomeComponent }, 
+    
+    ])
   ],
   providers: [
     provideClientHydration()
