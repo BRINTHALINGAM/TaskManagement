@@ -19,9 +19,17 @@ import { BoardsComponent } from './Team_C/boards/boards.component';
 import { TimetrackerComponent } from './Team_C/timetracker/timetracker.component';
 import { DocumentsComponent } from './Team_C/documents/documents.component';
 import { ImageuploaderComponent } from './Team_C/imageuploader/imageuploader.component';
-import { RoleComponent } from './role/role.component';
 import { UsersComponent } from './users/users.component';
 import { UserAddEditComponent } from './user-add-edit/user-add-edit.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CreateComponent } from './create/create.component';
+import { CommentComponent } from './comment/comment.component';
+import {Chart} from 'chart.js';
+import {registerables} from 'chart.js';
+Chart.register(...registerables);
+
+
+
 
 
 @NgModule({
@@ -40,7 +48,9 @@ import { UserAddEditComponent } from './user-add-edit/user-add-edit.component';
      BoardsComponent, 
      TimetrackerComponent, 
      DocumentsComponent, 
-     ImageuploaderComponent, RoleComponent, UsersComponent, UserAddEditComponent
+     ImageuploaderComponent, 
+     UsersComponent, 
+     UserAddEditComponent, CreateComponent, CommentComponent
 
   ],
   imports: [
@@ -51,7 +61,8 @@ import { UserAddEditComponent } from './user-add-edit/user-add-edit.component';
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent }, 
     
-    ])
+    ]),
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()
