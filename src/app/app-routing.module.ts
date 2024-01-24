@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { AclSettingsComponent } from './acl-settings/acl-settings.component';
 import { ChartComponent } from './chart/chart.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
+import { NotificationComponent } from './Team_C/notification/notification.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path:'acl',component:AclSettingsComponent},
   {path:'chart',component:ChartComponent},
   { path: 'task', component: TaskComponent },
+  { path: 'notification', component:NotificationComponent}
 ];
 
 @NgModule({
