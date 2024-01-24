@@ -22,6 +22,7 @@ import { ImageuploaderComponent } from './Team_C/imageuploader/imageuploader.com
 import { UsersComponent } from './users/users.component';
 import { UserAddEditComponent } from './user-add-edit/user-add-edit.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CreateComponent } from './create/create.component';
 
 
 
@@ -43,7 +44,7 @@ import { ReactiveFormsModule } from '@angular/forms';
      DocumentsComponent, 
      ImageuploaderComponent, 
      UsersComponent, 
-     UserAddEditComponent
+     UserAddEditComponent, CreateComponent
 
   ],
   imports: [
