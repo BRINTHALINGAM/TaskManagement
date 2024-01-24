@@ -9,7 +9,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AclSettingsComponent } from './acl-settings/acl-settings.component';
 import { LoginactivityComponent } from './loginactivity/loginactivity.component';
 import { ManageaccountComponent } from './manageaccount/manageaccount.component';
-import { RoleComponent } from './role/role.component';
+import { ChartComponent } from './chart/chart.component';
+import { LoginpageComponent } from './loginpage/loginpage.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { RoleComponent } from './role/role.component';
     AclSettingsComponent,
     LoginactivityComponent,
     ManageaccountComponent,     
-    RoleComponent
+     ChartComponent, LoginpageComponent
    
   ],
   imports: [
