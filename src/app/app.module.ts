@@ -10,6 +10,7 @@ import { AclSettingsComponent } from './acl-settings/acl-settings.component';
 import { LoginactivityComponent } from './loginactivity/loginactivity.component';
 import { ManageaccountComponent } from './manageaccount/manageaccount.component';
 import { ChartComponent } from './chart/chart.component';
+import { LoginpageComponent } from './loginpage/loginpage.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { ChartComponent } from './chart/chart.component';
     AclSettingsComponent,
     LoginactivityComponent,
     ManageaccountComponent,     
-     ChartComponent
+     ChartComponent, LoginpageComponent
    
   ],
   imports: [
