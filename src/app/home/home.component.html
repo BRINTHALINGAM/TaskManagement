@@ -58,15 +58,15 @@
 
     <!-- Profile Dropdown items and its icon -->
 
-      <button ngbDropdownItem>
-        <fa-icon [icon]="faKey" class="mr-2"></fa-icon> Manage Account
+      <button ngbDropdownItem [routerLink]="['/manageaccount']" routerLinkActive="router-link-active">
+        <fa-icon [icon]="faKey" class="mr-2"></fa-icon > Manage Account
       </button>      <button ngbDropdownItem>
         <fa-icon [icon]="faUser" class="mr-2"></fa-icon> Profile
       </button>
-      <button ngbDropdownItem>
-        <fa-icon [icon]="faClock" class="mr-2"></fa-icon> Login Activity
+      <button ngbDropdownItem [routerLink]="['/loginactivity']" routerLinkActive="router-link-active">
+        <fa-icon [icon]="faClock" class="mr-2"></fa-icon>   Login Activity
       </button>
-      <button ngbDropdownItem>
+      <button ngbDropdownItem [routerLink]="['/acl']" routerLinkActive="router-link-active" >
         <fa-icon [icon]="faShield" class="mr-2"></fa-icon> ACL
       </button>
             <div class="dropdown-divider"></div>
