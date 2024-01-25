@@ -32,6 +32,12 @@ import { FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 Chart.register(...registerables);
 import { DetailsComponent } from './details/details.component';
+import { TasktypeComponent } from './report/tasktype/tasktype.component';
+import { TaskpriorityComponent } from './report/taskpriority/taskpriority.component';
+import { TaskburndownComponent } from './report/taskburndown/taskburndown.component';
+import { ProjectpriorityComponent } from './report/projectpriority/projectpriority.component';
+import { ProjectburndownComponent } from './report/projectburndown/projectburndown.component';
+
 
 
 
@@ -55,7 +61,7 @@ import { DetailsComponent } from './details/details.component';
      ImageuploaderComponent, 
      UsersComponent,
      UserAddEditComponent, CreateComponent, CommentComponent, ProfileComponent, FormComponent, PageNotFoundComponent,
-      ImageuploaderComponent, DetailsComponent
+      ImageuploaderComponent, DetailsComponent, TasktypeComponent, TaskpriorityComponent, TaskburndownComponent, ProjectpriorityComponent, ProjectburndownComponent, 
   ],
   imports: [
     BrowserModule,
