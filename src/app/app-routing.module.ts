@@ -19,9 +19,8 @@ import { DetailsComponent } from './details/details.component';
 
 const routes: Routes = [
   { path : '', component : LoginpageComponent},
-  { path:'home', component:HomeComponent},
-  { path:'loginactivity', component:LoginactivityComponent },
   { path: 'manageaccount', component:ManageaccountComponent},
+  { path:'loginactivity', component:LoginactivityComponent },
   { path:'acl', component:AclSettingsComponent},
   { path:'chart', component:ChartComponent},
   { path: 'task', component: TaskComponent },
