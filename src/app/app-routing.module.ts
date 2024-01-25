@@ -10,6 +10,7 @@ import { ChartComponent } from './chart/chart.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { NotificationComponent } from './Team_C/notification/notification.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CommentComponent } from './comment/comment.component';
 
 const routes: Routes = [
   { path : '', component : LoginpageComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'notification', component:NotificationComponent},
   { path: 'profile', component: ProfileComponent},
   { path: 'form', component: FormComponent }, // Add this line for the FormComponent route
+  { path: 'comment', component: CommentComponent },
 ];
 
 @NgModule({
