@@ -34,7 +34,6 @@ const routes: Routes = [
   {path:'details',component:DetailsComponent},
    {path:'**',component:PageNotFoundComponent} 
 
->>>>>>> cd361847990fbdc82da9e58c61e17c90ffb0a6e3
 ];
 
 @NgModule({
