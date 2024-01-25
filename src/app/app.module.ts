@@ -59,10 +59,6 @@ Chart.register(...registerables);
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
-    RouterModule.forRoot([
-      { path: 'home', component: HomeComponent }, 
-    
-    ]),
     ReactiveFormsModule
   ],
   providers: [

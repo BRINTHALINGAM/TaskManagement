@@ -13,7 +13,6 @@ import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   { path : '', component : LoginpageComponent},
-  {path:'home',component:HomeComponent},
   { path:'loginactivity',component:LoginactivityComponent },
   {path: 'manageaccount', component:ManageaccountComponent},
   {path:'acl',component:AclSettingsComponent},
