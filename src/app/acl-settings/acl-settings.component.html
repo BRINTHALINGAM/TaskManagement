@@ -4,7 +4,7 @@
     Permission saved successfully!
   </div>
   
-  <table class="acl-table" >
+  <table class="table table-striped" >
     <thead>
       <tr>
         <th rowspan="4">Role</th>
@@ -42,6 +42,7 @@
             <input type="checkbox"   class="form-check-input" [id]="'action_' + role.toLowerCase() + '_task_' + action"
                    (change)="updateRoleActions(role, 'Task', action, $event)">
           </td>
+          
         </tr>
       </ng-container>
     </tbody>

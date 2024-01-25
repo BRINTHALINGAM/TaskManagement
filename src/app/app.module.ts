@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbDropdown, NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -19,7 +19,21 @@ import { BoardsComponent } from './Team_C/boards/boards.component';
 import { TimetrackerComponent } from './Team_C/timetracker/timetracker.component';
 import { DocumentsComponent } from './Team_C/documents/documents.component';
 import { ImageuploaderComponent } from './Team_C/imageuploader/imageuploader.component';
+import { UsersComponent } from './users/users.component';
+import { UserAddEditComponent } from './user-add-edit/user-add-edit.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CreateComponent } from './create/create.component';
+import { CommentComponent } from './comment/comment.component';
+import {Chart} from 'chart.js';
+import {registerables} from 'chart.js';
+import { ProfileComponent } from './profile/profile.component';
+import { FormComponent } from './task/form/form.component';
+import { FormsModule } from '@angular/forms';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+Chart.register(...registerables);
 import { DetailsComponent } from './details/details.component';
+
+
 
 
 @NgModule({
@@ -37,15 +51,21 @@ import { DetailsComponent } from './details/details.component';
      AuditComponent, 
      BoardsComponent, 
      TimetrackerComponent, 
-     DocumentsComponent, 
-     ImageuploaderComponent, DetailsComponent
+     DocumentsComponent,
+     ImageuploaderComponent, 
+     UsersComponent,
+     UserAddEditComponent, CreateComponent, CommentComponent, ProfileComponent, FormComponent, PageNotFoundComponent,
+      ImageuploaderComponent, DetailsComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    FormsModule,
     FontAwesomeModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()
