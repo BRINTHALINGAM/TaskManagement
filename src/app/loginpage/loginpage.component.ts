@@ -39,7 +39,7 @@ export class LoginpageComponent {
   onSubmit() {
     if (this.loginForm.valid) {
       console.log('Form submitted:', this.loginForm.value);
-      this.router.navigateByUrl('/home');
+      this.router.navigateByUrl('/task');
     }
   }
 }
