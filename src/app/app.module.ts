@@ -23,7 +23,15 @@ import { UsersComponent } from './users/users.component';
 import { UserAddEditComponent } from './user-add-edit/user-add-edit.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CreateComponent } from './create/create.component';
-import { FormsModule } from '@angular/forms'; 
+import { CommentComponent } from './comment/comment.component';
+import {Chart} from 'chart.js';
+import {registerables} from 'chart.js';
+import { ProfileComponent } from './profile/profile.component';
+import { FormComponent } from './task/form/form.component';
+import { FormsModule } from '@angular/forms';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+Chart.register(...registerables);
+
 
 
 
@@ -44,9 +52,8 @@ import { FormsModule } from '@angular/forms';
      TimetrackerComponent, 
      DocumentsComponent, 
      ImageuploaderComponent, 
-     UsersComponent, 
-     UserAddEditComponent, CreateComponent,
-     
+     UsersComponent,
+     UserAddEditComponent, CreateComponent, CommentComponent, ProfileComponent, FormComponent, PageNotFoundComponent
 
   ],
   imports: [
@@ -55,10 +62,7 @@ import { FormsModule } from '@angular/forms';
     NgbModule,
     FormsModule,
     FontAwesomeModule,
-    RouterModule.forRoot([
-      { path: 'home', component: HomeComponent }, 
-    
-    ]),
+    FormsModule,
     ReactiveFormsModule
   ],
   providers: [
