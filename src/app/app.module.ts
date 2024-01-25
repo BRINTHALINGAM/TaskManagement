@@ -27,6 +27,8 @@ import { CommentComponent } from './comment/comment.component';
 import {Chart} from 'chart.js';
 import {registerables} from 'chart.js';
 import { ProfileComponent } from './profile/profile.component';
+import { FormComponent } from './task/form/form.component';
+import { FormsModule } from '@angular/forms';
 Chart.register(...registerables);
 
 
@@ -51,7 +53,7 @@ Chart.register(...registerables);
      DocumentsComponent, 
      ImageuploaderComponent, 
      UsersComponent, 
-     UserAddEditComponent, CreateComponent, CommentComponent, ProfileComponent
+     UserAddEditComponent, CreateComponent, CommentComponent, ProfileComponent, FormComponent
 
   ],
   imports: [
@@ -59,6 +61,7 @@ Chart.register(...registerables);
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
+    FormsModule,
     ReactiveFormsModule
   ],
   providers: [
