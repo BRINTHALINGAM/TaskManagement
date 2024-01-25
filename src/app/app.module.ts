@@ -23,6 +23,7 @@ import { UsersComponent } from './users/users.component';
 import { UserAddEditComponent } from './user-add-edit/user-add-edit.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CreateComponent } from './create/create.component';
+import { FormsModule } from '@angular/forms'; 
 
 
 
@@ -44,13 +45,15 @@ import { CreateComponent } from './create/create.component';
      DocumentsComponent, 
      ImageuploaderComponent, 
      UsersComponent, 
-     UserAddEditComponent, CreateComponent
+     UserAddEditComponent, CreateComponent,
+     
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    FormsModule,
     FontAwesomeModule,
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent }, 

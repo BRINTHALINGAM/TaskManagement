@@ -42,7 +42,7 @@
                 <button ngbDropdownItem [routerLink]="['/task']" routerLinkActive="router-link-active" >Project 1</button>
                 <button ngbDropdownItem>Project 2</button>
                 <div class="dropdown-divider"></div>
-                <button ngbDropdownItem>Create Project</button>
+                <button ngbDropdownItem [routerLink]="['/create']" routerLinkActive="router-link-active">Create Project</button>
                 <button ngbDropdownItem>View all Project</button>
                 <button ngbDropdownItem>View all </button>
                 <div class="dropdown-divider"></div>
@@ -62,38 +62,32 @@
     </div>
 
     <!-- Notification icon -->
-    
+
+    <fa-icon [icon]="faBell" class="fa-2x mr-4 fa-icon-bell"></fa-icon>
+
+    <!-- Profile dropdown -->
+
     <div ngbDropdown class="d-inline-block position-relative">
-        <button class="dropdown-item" id="profileDropdown"ngbDropdownToggle >
-          <fa-icon [icon]="faBell" class="fa-2x"></fa-icon>
-        </button>
-        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-menu-custom ml-2">
-          <p ngbDropdownItem>Arunagiri</p>
-          <p ngbDropdownItem>Arunagiri</p>
-          <p ngbDropdownItem>Arunagiri</p>
-        </div>
-    </div>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-menu-custom ml-2">
+      <p ngbDropdownItem>Arunagiri</p>
+      <p ngbDropdownItem>arunagiri1706&#64;gmail.com</p>
+      <div class="dropdown-divider"></div>
 
     <!-- Profile Dropdown items and its icon -->
 
-    <div ngbDropdown class="d-inline-block position-relative">
-        <button class="dropdown-item" id="profileDropdown" style="margin-right: 50px;" ngbDropdownToggle>
-          <fa-icon [icon]="faUser" class="fa-2x"></fa-icon>
-        </button>
-      <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-menu-custom ml-2">
-        <p ngbDropdownItem>Arunagiri</p>
-        <p ngbDropdownItem>arunagiri1706&#64;gmail.com</p>
-        <div class="dropdown-divider"></div>
-        <button ngbDropdownItem [routerLink]="['/manageaccount']" routerLinkActive="router-link-active" >
-          <fa-icon [icon]="faKey" class="mr-2"></fa-icon> Manage Account
-        </button>      
-        <button ngbDropdownItem>
-          <fa-icon [icon]="faUser" class="mr-2"></fa-icon> Profile
-        </button>
-              <div class="dropdown-divider"></div>
-        <button ngbDropdownItem>
-          <fa-icon [icon]="faPower" class="mr-2"></fa-icon> Log Out
-        </button>
-      </div>
-    </div>  
+      <button ngbDropdownItem [routerLink]="['/manageaccount']" routerLinkActive="router-link-active" >
+        <fa-icon [icon]="faKey" class="mr-2"></fa-icon> Manage Account
+      </button>      
+      <button ngbDropdownItem>
+        <fa-icon [icon]="faUser" class="mr-2"></fa-icon> Profile
+      </button>
+            <div class="dropdown-divider"></div>
+      <button ngbDropdownItem>
+        <fa-icon [icon]="faPower" class="mr-2"></fa-icon> Log Out
+      </button>
+          </div>
+    <button class="dropdown-item" id="profileDropdown" style="margin-right: 50px;" ngbDropdownToggle>
+      <fa-icon [icon]="faUser" class="fa-2x"></fa-icon>
+    </button>
+  </div>  
   </nav>
