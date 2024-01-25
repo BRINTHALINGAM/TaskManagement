@@ -1,1 +1,12 @@
-<p>imageuploader works!</p>
+  <div>
+    <button type="button" (click)="toggleUploadForm()" >Add Images</button>
+
+    <button type="button" *ngIf="showUploadForm" (click)="openViewModal()">View</button>
+
+    <form *ngIf="showUploadForm" action="upload.php" method="post" enctype="multipart/form-data">
+      <label for="images">Select images:</label>
+      <input type="file" name="images[]" id="images" accept=".jpeg, .jpg, .png, .gif" multiple>
+      <button type="submit" name="submit">Upload</button>
+    </form>
+  </div>
+
