@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TimeTrackingComponent } from './timetracker.component';
+import { TimetrackerComponent } from './timetracker.component';
 
 describe('TimetrackerComponent', () => {
-  let component: TimeTrackingComponent;
-  let fixture: ComponentFixture<TimeTrackingComponent>;
+  let component: TimetrackerComponent;
+  let fixture: ComponentFixture<TimetrackerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [TimeTrackingComponent]
+      declarations: [TimetrackerComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(TimeTrackingComponent);
+    fixture = TestBed.createComponent(TimetrackerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

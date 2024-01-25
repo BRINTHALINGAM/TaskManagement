@@ -16,7 +16,7 @@ import { TeamsComponent } from './Team_C/teams/teams.component';
 import { NotificationComponent } from './Team_C/notification/notification.component';
 import { AuditComponent } from './Team_C/audit/audit.component';
 import { BoardsComponent } from './Team_C/boards/boards.component';
-import { TimeTrackingComponent } from './Team_C/timetracker/timetracker.component';
+import { TimetrackerComponent } from './Team_C/timetracker/timetracker.component';
 import { DocumentsComponent } from './Team_C/documents/documents.component';
 import { ImageuploaderComponent } from './Team_C/imageuploader/imageuploader.component';
 import { UsersComponent } from './users/users.component';

@@ -1,13 +1,12 @@
-// time-tracking.component.ts
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-time-tracking',
-  templateUrl: './time-tracking.component.html',
-  styleUrls: ['./time-tracking.component.css']
+  selector: 'app-timetracker',
+  templateUrl: './timetracker.component.html',
+  styleUrl: './timetracker.component.css'
 })
-export class TimeTrackingComponent implements OnInit {
+export class TimetrackerComponent {
   timeEntries: any[] = [];
   timeEntryForm!: FormGroup;
   showPopup = false;
@@ -97,4 +96,5 @@ export class TimeTrackingComponent implements OnInit {
   private clearForm() {
     this.timeEntryForm.reset();
   }
+
 }
