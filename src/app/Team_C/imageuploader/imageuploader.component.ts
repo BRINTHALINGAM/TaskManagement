@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './imageuploader.component.css'
 })
 export class ImageuploaderComponent {
+  showUploadForm: boolean = false;
+
+  toggleUploadForm() {
+    this.showUploadForm = !this.showUploadForm;
+  }
+
+  openViewModal() {
+    // Implement your logic to open the view modal
+    console.log('View button clicked');
+  }
 
 }

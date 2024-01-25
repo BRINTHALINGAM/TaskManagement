@@ -22,7 +22,7 @@ export class LoginpageComponent {
   onSubmit() {
       // Implement your form submission logic here
       console.log('Form submitted:', this.loginForm.value);
-      this.router.navigateByUrl('/home');
+      this.router.navigateByUrl('/task');
     
   }
 }

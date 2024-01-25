@@ -10,6 +10,8 @@ import { ChartComponent } from './chart/chart.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { NotificationComponent } from './Team_C/notification/notification.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AuditComponent } from './Team_C/audit/audit.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CommentComponent } from './comment/comment.component';
 
 const routes: Routes = [
@@ -22,8 +24,10 @@ const routes: Routes = [
   { path: 'task', component: TaskComponent },
   { path: 'notification', component:NotificationComponent},
   { path: 'profile', component: ProfileComponent},
-  { path: 'form', component: FormComponent }, // Add this line for the FormComponent route
+  { path: 'form', component: FormComponent }, 
+  {path:'audit' ,component:AuditComponent},
   { path: 'comment', component: CommentComponent },
+   {path:'**',component:PageNotFoundComponent} 
 ];
 
 @NgModule({
