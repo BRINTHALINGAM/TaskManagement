@@ -12,6 +12,8 @@ import { NotificationComponent } from './Team_C/notification/notification.compon
 import { ProfileComponent } from './profile/profile.component';
 import { AuditComponent } from './Team_C/audit/audit.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CommentComponent } from './comment/comment.component';
+import { ImageuploaderComponent } from './Team_C/imageuploader/imageuploader.component';
 
 const routes: Routes = [
   { path : '', component : LoginpageComponent},
@@ -24,6 +26,8 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent},
   { path: 'form', component: FormComponent }, 
   {path:'audit' ,component:AuditComponent},
+  { path: 'comment', component: CommentComponent },
+  {path:'image' ,component:ImageuploaderComponent},
    {path:'**',component:PageNotFoundComponent} 
 ];
 
