@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-acl-settings',
   templateUrl: './acl-settings.component.html',
@@ -12,7 +12,7 @@ export class AclSettingsComponent implements OnInit {
   actions = ['Create', 'Assign', 'View', 'Delete', 'Edit'];
   showAlert: boolean = false;
   roleActionsMap: { [key: string]: { [key: string]: string[] } } = {};
-
+  constructor(private router: Router) {}
   ngOnInit() {
     
     this.roles.forEach(role => {
@@ -46,6 +46,11 @@ export class AclSettingsComponent implements OnInit {
     this.showAlert = true;
     setTimeout(() => {
       this.showAlert = false;
+      this.router.navigate(['/home']);
     }, 3000);
+    
   }
+  
+  
+  
 }
