@@ -25,8 +25,7 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent},
   { path: 'form', component: FormComponent }, 
   {path:'audit' ,component:AuditComponent},
-  // {path:'**',component:PageNotFoundComponent} 
-
+   {path:'**',component:PageNotFoundComponent} 
 ];
 
 @NgModule({
