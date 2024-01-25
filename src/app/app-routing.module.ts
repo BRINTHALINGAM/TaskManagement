@@ -15,9 +15,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 const routes: Routes = [
   { path : '', component : LoginpageComponent},
-  { path:'home', component:HomeComponent},
-  { path:'loginactivity', component:LoginactivityComponent },
   { path: 'manageaccount', component:ManageaccountComponent},
+  { path:'loginactivity', component:LoginactivityComponent },
   { path:'acl', component:AclSettingsComponent},
   { path:'chart', component:ChartComponent},
   { path: 'task', component: TaskComponent },
