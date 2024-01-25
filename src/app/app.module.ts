@@ -35,7 +35,6 @@ Chart.register(...registerables);
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +52,7 @@ Chart.register(...registerables);
      TimetrackerComponent, 
      DocumentsComponent, 
      ImageuploaderComponent, 
-     UsersComponent, 
+     UsersComponent,
      UserAddEditComponent, CreateComponent, CommentComponent, ProfileComponent, FormComponent, PageNotFoundComponent
 
   ],
@@ -61,6 +60,7 @@ Chart.register(...registerables);
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    FormsModule,
     FontAwesomeModule,
     FormsModule,
     ReactiveFormsModule
