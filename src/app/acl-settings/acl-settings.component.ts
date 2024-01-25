@@ -1,56 +1,51 @@
 import { Component, OnInit } from '@angular/core';
+import { AclSettingsService } from './acl-settings.service';
 import { Router } from '@angular/router';
 @Component({
-  selector: 'app-acl-settings',
-  templateUrl: './acl-settings.component.html',
-  styleUrls: ['./acl-settings.component.css']
+  selector: 'app-acl-settings', 
+  templateUrl: './acl-settings.component.html', 
+  styleUrls: ['./acl-settings.component.css'], 
 })
-export class AclSettingsComponent implements OnInit {
-  roles = ['SDEV', 'JDEV', 'TL', 'ST'];
-
-  permissions = ['Team', 'Project', 'Task'];
-  actions = ['Create', 'Assign', 'View', 'Delete', 'Edit'];
+export class AclSettingsComponent implements OnInit { 
+  roles: string[] = ['TeamLeader', 'SeniorDeveloper', 'JuniorDeveloper', 'SoftwareTrainee'];
+  permissions: string[] = ['Create', 'Assign', 'View', 'Edit', 'Delete'];
+  rolePermissions: { [role: string]: { permissions: string[] } } = {};
   showAlert: boolean = false;
-  roleActionsMap: { [key: string]: { [key: string]: string[] } } = {};
-  constructor(private router: Router) {}
-  ngOnInit() {
-    
-    this.roles.forEach(role => {
-      this.roleActionsMap[role] = {};
-      this.permissions.forEach(permission => {
-        this.roleActionsMap[role][permission] = [];
-      });
+
+  constructor(private aclService: AclSettingsService,private router: Router) {}
+
+  ngOnInit(): void {
+   
+    this.loadRolePermissions();
+  }
+  private loadRolePermissions() {
+    this.roles.forEach((role) => {
+      const roleDetails = this.aclService.getRoleDetails(role);
+      this.rolePermissions[role] = {
+        permissions: roleDetails.permissions,
+      };
     });
   }
-
-  updateRoleActions(role: string, permission: string, action: string, event: any) {
+  onPermissionChange(role: string, permission: string, event: any) {
     if (event.target.checked) {
-      this.roleActionsMap[role][permission].push(action);
+      this.rolePermissions[role].permissions.push(permission);
     } else {
-      const index = this.roleActionsMap[role][permission].indexOf(action);
+      const index = this.rolePermissions[role].permissions.indexOf(permission);
       if (index !== -1) {
-        this.roleActionsMap[role][permission].splice(index, 1);
+        this.rolePermissions[role].permissions.splice(index, 1);
       }
     }
   }
-
-  saveAclData() {
-    for (const role of this.roles) {
-      for (const permission of this.permissions) {
-        const actions = this.roleActionsMap[role][permission].join(', ');
-        console.log(`${role}: Permission: ${permission}, Actions: ${actions}`);
-      }
-    }
-
-    console.log('Acl data saved successfully.');
+  saveRolePermissions() {
+    this.roles.forEach((role) => {
+      const { permissions } = this.rolePermissions[role];
+      this.aclService.saveRoleDetails(role, { permissions });
+    });
+    console.log('Permissions saved:', this.rolePermissions); 
     this.showAlert = true;
     setTimeout(() => {
       this.showAlert = false;
       this.router.navigate(['/home']);
     }, 3000);
-    
   }
-  
-  
-  
 }
