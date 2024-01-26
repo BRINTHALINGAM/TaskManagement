@@ -35,25 +35,23 @@
 
           <!-- Project button and its dropdown items -->
 
-        <li class="nav-item dropdown">
-          <div ngbDropdown class="d-inline-block">
-            <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
-              Projects
-            </button>
-            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-              <button ngbDropdownItem></button>
-              <button ngbDropdownItem [routerLink]="['/task']" routerLinkActive="router-link-active" >Project 1</button>
-              <button ngbDropdownItem>Project 2</button>
-              <div class="dropdown-divider"></div>
-              <button ngbDropdownItem>Create Project </button>
-              <button ngbDropdownItem>View all Project</button>
-              <button ngbDropdownItem>View all Tasks </button>
-              <div class="dropdown-divider"></div>
-              <button ngbDropdownItem>Report</button>
-              <button ngbDropdownItem [routerLink]="['/chart']" routerLinkActive="router-link-active" >Charts</button>
+          <li class="nav-item dropdown">
+            <div class="btn-group">
+              <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                Projects
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="/task" routerLinkActive="router-link-active">Project 1</a></li>
+                <li><a class="dropdown-item">Project 2</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" routerLink="/create" routerLinkActive="router-link-active">Create Project</a></li>
+                <li><a class="dropdown-item">View all Project</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" routerLink="/chart" routerLinkActive="router-link-active">Charts</a></li>
+              </ul>
             </div>
-          </div>
-        </li>
+          </li>
+          
 
         <!-- Teams button -->
 
@@ -78,7 +76,7 @@
         <a  class="dropdown-item" [routerLink]="['/notification']" ><button  type="button" class="btn btn-outline-primary ">Show All</button></a>
       </div>
   </div>
-
+  
   <!-- Profile Dropdown items and its icon -->
 
   <div ngbDropdown class="d-inline-block position-relative">
