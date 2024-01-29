@@ -1,52 +1,34 @@
-<!-- acl-settings.component.html -->
-
-<div *ngIf="showAlert" class="alert alert-success" role="alert">
+ <div *ngIf="showAlert" class="alert alert-success" role="alert">
     Permission saved successfully!
   </div>
-  
-  <table class="table table-striped" >
+  <div class="container mt-5"> 
+    <h4>ACL_Settings</h4>
+    <div class="container mt-5"> 
+  <table class="table table-striped">
     <thead>
       <tr>
-        <th rowspan="4">Role</th>
-        <th rowspan="4">Permission</th>
-        <th colspan="5">Actions</th>
-      </tr>
-      <tr>
-        <th>Create</th>
-        <th>Assign</th>
-        <th>View</th>
-        <th>Edit</th>
-        <th>Delete</th>
+        <th>Role</th>
+        <th *ngFor="let permission of permissions">{{ permission }}</th>
       </tr>
     </thead>
     <tbody>
-      <ng-container *ngFor="let role of roles">
-        <tr>
-          <td rowspan="3"><strong>{{ role }}</strong></td>
-          <td>Team</td>
-          <td *ngFor="let action of actions">
-            <input type="checkbox" class="form-check-input" [id]="'action_' + role.toLowerCase() + '_team_' + action"
-                   (change)="updateRoleActions(role, 'Team', action, $event)">
-          </td>
-        </tr>
-        <tr>
-          <td>Project</td>
-          <td *ngFor="let action of actions">
-            <input type="checkbox" class="form-check-input" [id]="'action_' + role.toLowerCase() + '_project_' + action"
-                   (change)="updateRoleActions(role, 'Project', action, $event)">
-          </td>
-        </tr>
-        <tr>
-          <td>Task</td>
-          <td *ngFor="let action of actions">
-            <input type="checkbox"   class="form-check-input" [id]="'action_' + role.toLowerCase() + '_task_' + action"
-                   (change)="updateRoleActions(role, 'Task', action, $event)">
-          </td>
-          
-        </tr>
-      </ng-container>
+      <tr *ngFor="let role of roles">
+        <td>{{ role }}</td>
+        <td *ngFor="let permission of permissions">
+          <label class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              [checked]="rolePermissions[role].permissions.includes(permission)"
+              (change)="onPermissionChange(role, permission, $event)"
+            />
+          </label>
+        </td>
+      </tr>
     </tbody>
   </table>
+  <button class="btn btn-success" (click)="saveRolePermissions()">Save Permissions</button>
+    </div>
+  </div>
   
-  <button class="btn btn-success" type="submit" (click)="saveAclData()">Save</button>
   

@@ -1,5 +1,6 @@
 <div class="container">
-    <h1>Audit Page</h1>
+    <h4>Audit_Page</h4>
+    <div class="container mt-1"></div>
   
     <form [formGroup]="auditForm" (ngSubmit)="filterLogs()">
       <label for="dateRange">Date Range:</label>
@@ -17,6 +18,8 @@
       <button type="submit" class="btn btn-outline-custom">Filter</button>
       
     </form>
+
+    <div class="container mt-1"></div>
   
     <div *ngIf="filteredLogs.length === 0; else table">
       <p>No record is matched!</p>
