@@ -56,8 +56,8 @@ const routes: Routes = [
   {path:'burndowntask',component:TaskburndownComponent},
   {path:'projectpriority',component:ProjectpriorityComponent},
   {path:'burndownproject',component:ProjectburndownComponent},
-   {path:'**',component:PageNotFoundComponent} 
-
+   {path:'**',component:PageNotFoundComponent}
+   
 ];
 
 @NgModule({
