@@ -29,6 +29,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { FormComponent } from './task/form/form.component';
 import { FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 Chart.register(...registerables);
 import { DetailsComponent } from './details/details.component';
 import { TasktypeComponent } from './report/tasktype/tasktype.component';
@@ -36,6 +37,7 @@ import { TaskpriorityComponent } from './report/taskpriority/taskpriority.compon
 import { TaskburndownComponent } from './report/taskburndown/taskburndown.component';
 import { ProjectpriorityComponent } from './report/projectpriority/projectpriority.component';
 import { ProjectburndownComponent } from './report/projectburndown/projectburndown.component';
+
 
 
 
