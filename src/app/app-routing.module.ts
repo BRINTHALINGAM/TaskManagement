@@ -20,6 +20,9 @@ import { BoardsComponent } from './Team_C/boards/boards.component';
 import { TimetrackerComponent } from './Team_C/timetracker/timetracker.component';
 import { UsersComponent } from './users/users.component';
 import { UserAddEditComponent } from './user-add-edit/user-add-edit.component';
+import { TasktypeComponent } from './report/tasktype/tasktype.component';
+import { DocumentsComponent } from './Team_C/documents/documents.component';
+import { TextEditorComponent } from './Team_C/documents/text-editor/text-editor.component';
 
 const routes: Routes = [
   { path : '', component : LoginpageComponent},
@@ -41,6 +44,10 @@ const routes: Routes = [
   {path:'imageuploader',component:ImageuploaderComponent},
   {path:'users', component:UsersComponent},
   {path:'user-add-edit',component:UserAddEditComponent},
+  {path:'tasktype',component:TasktypeComponent},
+  {path:'documents',component:DocumentsComponent},
+  {path:'text-editor',component:TextEditorComponent},
+  {path:'tasktype',component:TasktypeComponent},
    {path:'**',component:PageNotFoundComponent} 
 
 ];
