@@ -9,7 +9,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TaskComponent } from './task/task.component';
 import { AclSettingsComponent } from './acl-settings/acl-settings.component';
 import { LoginactivityComponent } from './loginactivity/loginactivity.component';
-import { ManageaccountComponent } from './manageaccount/manageaccount.component';
 import { ChartComponent } from './chart/chart.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { TeamsComponent } from './Team_C/teams/teams.component';
@@ -30,8 +29,16 @@ import { ProfileComponent } from './profile/profile.component';
 import { FormComponent } from './task/form/form.component';
 import { FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 Chart.register(...registerables);
 import { DetailsComponent } from './details/details.component';
+import { TasktypeComponent } from './report/tasktype/tasktype.component';
+import { TaskpriorityComponent } from './report/taskpriority/taskpriority.component';
+import { TaskburndownComponent } from './report/taskburndown/taskburndown.component';
+import { ProjectpriorityComponent } from './report/projectpriority/projectpriority.component';
+import { ProjectburndownComponent } from './report/projectburndown/projectburndown.component';
+
+
 
 
 
@@ -43,7 +50,6 @@ import { DetailsComponent } from './details/details.component';
     TaskComponent,
     AclSettingsComponent,
     LoginactivityComponent,
-    ManageaccountComponent,     
      ChartComponent, 
      LoginpageComponent, 
      TeamsComponent, 
@@ -55,7 +61,7 @@ import { DetailsComponent } from './details/details.component';
      ImageuploaderComponent, 
      UsersComponent,
      UserAddEditComponent, CreateComponent, CommentComponent, ProfileComponent, FormComponent, PageNotFoundComponent,
-      ImageuploaderComponent, DetailsComponent
+      ImageuploaderComponent, DetailsComponent, TasktypeComponent, TaskpriorityComponent, TaskburndownComponent, ProjectpriorityComponent, ProjectburndownComponent, 
   ],
   imports: [
     BrowserModule,

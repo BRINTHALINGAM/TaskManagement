@@ -25,7 +25,11 @@ body {
 
   
 
- 
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
 
   .content-box {
     margin: 20px;

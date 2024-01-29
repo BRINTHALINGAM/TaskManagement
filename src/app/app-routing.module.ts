@@ -3,7 +3,6 @@ import { LoginactivityComponent } from './loginactivity/loginactivity.component'
 import { NgModule, Component, createComponent } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TaskComponent } from './task/task.component';
-import { ManageaccountComponent } from './manageaccount/manageaccount.component';
 import { HomeComponent } from './home/home.component';
 import { AclSettingsComponent } from './acl-settings/acl-settings.component';
 import { ChartComponent } from './chart/chart.component';
@@ -19,10 +18,11 @@ import { DetailsComponent } from './details/details.component';
 import { TeamsComponent } from './Team_C/teams/teams.component';
 import { BoardsComponent } from './Team_C/boards/boards.component';
 import { TimetrackerComponent } from './Team_C/timetracker/timetracker.component';
+import { UsersComponent } from './users/users.component';
+import { UserAddEditComponent } from './user-add-edit/user-add-edit.component';
 
 const routes: Routes = [
   { path : '', component : LoginpageComponent},
-  { path: 'manageaccount', component:ManageaccountComponent},
   { path:'loginactivity', component:LoginactivityComponent },
   { path:'acl', component:AclSettingsComponent},
   { path:'chart', component:ChartComponent},
@@ -39,7 +39,8 @@ const routes: Routes = [
   {path:'boards',component:BoardsComponent},
   {path:'timetracker',component:TimetrackerComponent},
   {path:'imageuploader',component:ImageuploaderComponent},
-  
+  {path:'users', component:UsersComponent},
+  {path:'user-add-edit',component:UserAddEditComponent},
    {path:'**',component:PageNotFoundComponent} 
 
 ];
