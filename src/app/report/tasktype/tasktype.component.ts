@@ -9,11 +9,11 @@ export class TasktypeComponent {
   selectedTaskType: string = 'all'; // Initialize with 'all' to show all tasks initially
   
   tasks = [
-    { id: 101, name: 'Image button', userId: 1001, taskType: 'Issue', owner: 'Shruti', startDate: '10.01.24', dueDate: '20.01.24' },
-    { id: 102, name: 'Comment button', userId: 1002, taskType: 'Bug', owner: 'Priyanka', startDate: '10.01.24', dueDate: '20.01.24' },
-    { id: 103, name: 'Textbox', userId: 1002, taskType: 'Create', owner: 'Priyanka', startDate: '10.01.24', dueDate: '21.01.24' },
-    { id: 104, name: 'Likes', userId: 1002, taskType: 'Features', owner: 'Priyanka', startDate: '10.01.24', dueDate: '22.01.24' },
-    { id: 105, name: 'Notes', userId: 1002, taskType: 'Bug', owner: 'Priyanka', startDate: '10.01.24', dueDate: '24.01.24' },
+    { pid:2001,id: 101, name: 'Image button', userId: 1001,priority:'high', taskType: 'Issue', owner: 'Shruti', startDate: '10.01.24', dueDate: '20.01.24' },
+    { pid:2002,id: 102, name: 'Comment button', userId: 1002,priority:'Low',  taskType: 'Bug', owner: 'Priyanka', startDate: '10.01.24', dueDate: '20.01.24' },
+    { pid:2003,id: 103, name: 'Textbox', userId: 1003,priority:'Medium',  taskType: 'Create', owner: 'Priyanka', startDate: '10.01.24', dueDate: '21.01.24' },
+    { pid:3004,id: 104, name: 'Likes', userId: 1004,priority:'high',  taskType: 'Features', owner: 'Priyanka', startDate: '10.01.24', dueDate: '22.01.24' },
+    { pid:5005,id: 105, name: 'Notes', userId: 1005,priority:'Medium',  taskType: 'Bug', owner: 'Priyanka', startDate: '10.01.24', dueDate: '24.01.24' },
     // Add other tasks as needed
   ];
 

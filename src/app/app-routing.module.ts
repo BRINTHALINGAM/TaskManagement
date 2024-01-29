@@ -23,6 +23,10 @@ import { UserAddEditComponent } from './user-add-edit/user-add-edit.component';
 import { TasktypeComponent } from './report/tasktype/tasktype.component';
 import { DocumentsComponent } from './Team_C/documents/documents.component';
 import { TextEditorComponent } from './Team_C/documents/text-editor/text-editor.component';
+import { TaskpriorityComponent } from './report/taskpriority/taskpriority.component';
+import { TaskburndownComponent } from './report/taskburndown/taskburndown.component';
+import { ProjectpriorityComponent } from './report/projectpriority/projectpriority.component';
+import { ProjectburndownComponent } from './report/projectburndown/projectburndown.component';
 
 const routes: Routes = [
   { path : '', component : LoginpageComponent},
@@ -48,6 +52,10 @@ const routes: Routes = [
   {path:'documents',component:DocumentsComponent},
   {path:'text-editor',component:TextEditorComponent},
   {path:'tasktype',component:TasktypeComponent},
+  {path:'taskpriority',component:TaskpriorityComponent},
+  {path:'burndowntask',component:TaskburndownComponent},
+  {path:'projectpriority',component:ProjectpriorityComponent},
+  {path:'burndownproject',component:ProjectburndownComponent},
    {path:'**',component:PageNotFoundComponent} 
 
 ];
