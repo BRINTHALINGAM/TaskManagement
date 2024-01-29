@@ -30,7 +30,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { FormComponent } from './task/form/form.component';
 import { FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 Chart.register(...registerables);
+
 
 
 
@@ -54,7 +56,7 @@ Chart.register(...registerables);
      DocumentsComponent, 
      ImageuploaderComponent, 
      UsersComponent, 
-     UserAddEditComponent, CreateComponent, CommentComponent, ProfileComponent, FormComponent, PageNotFoundComponent
+     UserAddEditComponent, CreateComponent, CommentComponent, ProfileComponent, FormComponent, PageNotFoundComponent,
 
   ],
   imports: [

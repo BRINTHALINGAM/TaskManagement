@@ -12,6 +12,8 @@ import { NotificationComponent } from './Team_C/notification/notification.compon
 import { ProfileComponent } from './profile/profile.component';
 import { AuditComponent } from './Team_C/audit/audit.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { UsersComponent } from './users/users.component';
+import { UserAddEditComponent } from './user-add-edit/user-add-edit.component';
 
 const routes: Routes = [
   { path : '', component : LoginpageComponent},
@@ -25,6 +27,8 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent},
   { path: 'form', component: FormComponent }, 
   {path:'audit' ,component:AuditComponent},
+  {path:'users', component:UsersComponent},
+  {path:'user-add-edit',component:UserAddEditComponent}
   // {path:'**',component:PageNotFoundComponent} 
 
 ];
